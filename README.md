@@ -35,10 +35,11 @@ Now, you can proceed with installing Jenkins
 From website for Jenkins installation we will get release 
 We need long term support release 
 ```
-wget-O /etc/yum.repos.d/jenkins.repo\
+wget- O /etc/yum.repos.d/jenkins.repo\
 https://pkg.jenkins.io/redhat-stable/jenkins.repo
+apt install rpm -y
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-yum update -y
+apt update -y
 Jenkins –version
 systemctl start Jenkins
 systemctl status Jenkins
